@@ -68,7 +68,7 @@ public class DatabaseInitializer {
 
             // 2. Admin kullanıcısını tanımlayın ve oluşturun/güncelleyin
             String adminUsername = "tbrzmmdvv"; // Sizin GitHub kullanıcı adınız
-            String adminEmail = "tebrizrza05@gmail.com"; // LÜTFEN BUNU GEÇERLİ BİR E-POSTA İLE DEĞİŞTİRİN!
+            String adminEmail = "tebrizrza055@gmail.com"; // LÜTFEN BUNU GEÇERLİ BİR E-POSTA İLE DEĞİŞTİRİN!
             String adminPassword = "123456tr"; // LÜTFEN BUNU ÇOK GÜVENLİ BİR ŞİFRE İLE DEĞİŞTİRİN!
 
             Optional<User> existingAdminOpt = userRepository.findByUsername(adminUsername);
