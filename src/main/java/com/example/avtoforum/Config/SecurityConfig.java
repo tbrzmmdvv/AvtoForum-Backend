@@ -64,7 +64,8 @@ public class SecurityConfig {
                 .exceptionHandling(exception -> exception.authenticationEntryPoint(unauthorizedHandler))  // Exception handling yapılandırması
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))  // Stateless session oluşturulması
                 .authorizeHttpRequests(authz -> authz
-                        .requestMatchers("/api/auth/**").permitAll()  // AntMatchers yerine RequestMatchers
+                        .requestMatchers("/api/auth/**").permitAll()
+                        .requestMatchers("/auth/**").permitAll()// AntMatchers yerine RequestMatchers
                         .requestMatchers("/api/categories/**").permitAll()
                         .requestMatchers("/api/topics/**").permitAll()
                         .requestMatchers("/api/comments/**").permitAll()
