@@ -81,7 +81,7 @@ public class SecurityConfig {
     // CORS yapılandırması
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000")); // Frontend domain adresi
+        configuration.setAllowedOrigins(Arrays.asList("http://165.227.151.218")); // Frontend domain adresi
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS")); // İzin verilen HTTP metodları
         configuration.setAllowedHeaders(Arrays.asList("Authorization", "Content-Type")); // İzin verilen başlıklar
         configuration.setAllowCredentials(true);
